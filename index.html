@@ -5,14 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="style.css">
     <title>Sign-Up Form</title>
 </head>
 <body>
     <div class="wrapper">
         <div class="header-left">
-            <div class="img-banner">
-                <img src="" alt="">
-            </div>
+            <div class="img-banner"></div>
         </div>
         <div class="content-right">
             <div class="our-service">
@@ -21,29 +20,35 @@
             <form action="" method="get" class="sign-up-form">
                 <h3>Let's do this!</h3>
                 <section>
-                    <div class="form-input">
-                        <label for="first-name">FIRST NAME</label>
-                        <input type="text" name="first-name" id="first-name">
+                    <div class="form-row">
+                        <div class="form-input">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" name="first-name" id="first-name">
+                        </div>
+                        <div class="form-input">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" name="last-name" id="last-name">
+                        </div>
                     </div>
-                    <div class="form-input">
-                        <label for="last-name">LAST NAME</label>
-                        <input type="text" name="last-name" id="last-name">
+                    <div class="form-row">
+                        <div class="form-input">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="form-input">
+                            <label for="tel">PHONE NUMBER</label>
+                            <input type="tel" name="tel" id="tel">
+                        </div>
                     </div>
-                    <div class="form-input">
-                        <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email">
-                    </div>
-                    <div class="form-input">
-                        <label for="tel">PHONE NUMBER</label>
-                        <input type="tel" name="tel" id="tel">
-                    </div>
-                    <div class="form-input">
-                        <label for="pwd">PASSWORD</label>
-                        <input type="password" name="pwd" id="pwd">
-                    </div>
-                    <div class="form-input">
-                        <label for="confirm-pwd">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirm-pwd" id="confirm-pwd">
+                    <div class="form-row">
+                        <div class="form-input">
+                            <label for="pwd">PASSWORD</label>
+                            <input type="password" name="pwd" id="pwd">
+                        </div>
+                        <div class="form-input">
+                            <label for="confirm-pwd">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm-pwd" id="confirm-pwd">
+                        </div>
                     </div>
                 </section>
                 <section>
@@ -54,10 +59,6 @@
             </form>
             <p>Already have an account? <a href="">Log in</a></p>
         </div>
-
-
-
     </div>
-    
 </body>
 </html>
