@@ -1,22 +1,22 @@
-.body {
-    overflow: hidden;
-    margin: 0;
-    
-}
+
 
 .wrapper {
     display: flex;
-    gap: 20px;
-}
-
-.header-left {
-    width: 35vw;
+    justify-content: flex-end;
+    align-items: center;
     height: 100vh;
+    width: 100vw;
+    overflow: none;
+    gap: 20px;
 }
 
 .img-banner {
     background-image: url("img/casey-horner-unsplash.jpg");
-    background-size: 100% 100%;
-    width: 100%;
+    background-size: cover;
+    background-position: center center;
     height: 100%;
+    width: 35vw;
+    
+    
+    
 }
