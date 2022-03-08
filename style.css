@@ -14,7 +14,9 @@
     display: flex;
     align-items: center;
     height: 100vh;
+    min-height: 600px;
     width: 100vw;
+    min-width: 500px;
     overflow: none;
 }
 
@@ -72,23 +74,42 @@
 .content-right {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    justify-content: space-between;
+    height: 100%;
     width: 60vw;
+    min-width: 300px;
 }
 
 .our-service {
     height: calc(50vh - 65px); 
+    min-height: 200px;
     background-color: #f9fbfd;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+    font-size: 18px;
 }
 
 p, 
 form {
-    padding: 10px 40px;
+    padding: 10px 50px;
     font-family: "Roboto", sans-serif;
+}
+
+form {
+    height: 45vh;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+form p {
+    margin: 0;
+    padding: 50px 0 0 0;
+    font-size: 14px;
 }
 
 .content-bottom-right {
@@ -97,5 +118,11 @@ form {
     background-repeat: repeat;
     background-position: center center;
     height: calc((100vh-(100vh - 10px));
-    width: 60vw;   
+    width: 60vw; 
+    height: 10vh;
+}
+
+
+.content-bottom-right p {
+    font-size: 10px;
 }
