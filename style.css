@@ -1,22 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+@font-face {
+    font-family: "Ostrich";
+    src: url("../fonts/ostrich-sans-bold.woff") format("woff");
+    src: url("../fonts/ostrich-sans-bold.ttf") format("truetype")
+}
 
 .wrapper {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     height: 100vh;
     width: 100vw;
     overflow: none;
-    gap: 20px;
+    gap: 40px;
 }
 
 .img-banner {
-    background-image: url("img/casey-horner-unsplash.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/casey-horner-unsplash.jpg");
     background-size: cover;
     background-position: center center;
     height: 100%;
-    width: 35vw;
-    
-    
-    
+    width: 45vw;
+    min-width: 325px
+}
+
+.logo {
+    font-family: "Ostrich", sans-serif;
+    font-size: 5rem;
+    color: white;
+    background-color: black;
+    opacity: .7;
+    width: 100%;
+    height: 130px;
+    line-height: 150px;
+    text-align: center;
 }
