@@ -5,9 +5,21 @@
 }
 
 @font-face {
-    font-family: "Ostrich";
+    font-family: "Ostrich Bold";
     src: url("../fonts/ostrich-sans-bold.woff") format("woff");
-    src: url("../fonts/ostrich-sans-bold.ttf") format("truetype")
+    src: url("../fonts/ostrich-sans-bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Ostrich Italic";
+    src: url("../fonts/ostrich-sans-inline-italic.woff") format("woff");
+    src: url("../fonts/ostrich-sans-inline-italic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Ostrich Regular";
+    src: url("../fonts/ostrich-sans-rounded.woff") format("woff");
+    src: url("../fonts/ostrich-sans-rounded.ttf") format("truetype");
 }
 
 .wrapper {
@@ -55,7 +67,7 @@
 }
 
 .logo-name {
-    font-family: "Ostrich", sans-serif;
+    font-family: "Ostrich Bold", sans-serif;
     font-size: 4rem;
     margin-top: 20px;
     color: white;
@@ -82,7 +94,7 @@
 
 .our-service {
     height: calc(100vh - 450px); 
-    min-height: 250px;
+    min-height: 150px;
     background-color: #f9fbfd;
     display: flex;
     justify-content: center;
@@ -99,18 +111,24 @@ form {
 
 form {
     height: 45vh;
-    min-height: 300px;
+    min-height: 400px;
     min-width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 .form-row {
     display: flex;
     justify-content: flex-start;
-    gap: 10px;
+    gap: 40px;
+}
+
+form h3 {
+    font-family: "Ostrich Regular";
+    font-size: 38px;
+    padding-top: 10px;
 }
 
 form section {
@@ -120,12 +138,27 @@ form section {
 }
 
 form p {
-    padding: 50px 0 0 0;
+    padding: 15px 0 0 0;
     font-size: 14px;
 }
 
-input {
-    width: 200px;
+.form-input {
+    width: 175px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+form button {
+    font-family: "Ostrich Italic";
+    font-size: 18px;
+    padding: 7px 15px;
 }
 
 .content-bottom-right {
