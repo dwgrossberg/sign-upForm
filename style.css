@@ -72,12 +72,12 @@
 .content-right {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 10px);
+    height: 100vh;
     width: 60vw;
 }
 
 .our-service {
-    height: 40vh;
+    height: calc(50vh - 65px); 
     background-color: #f9fbfd;
     display: flex;
     justify-content: center;
@@ -89,7 +89,13 @@ p,
 form {
     padding: 10px 40px;
     font-family: "Roboto", sans-serif;
-
 }
 
-
+.content-bottom-right {
+    background-image: url("../img/space-pattern.png");
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center center;
+    height: calc((100vh-(100vh - 10px));
+    width: 60vw;   
+}
