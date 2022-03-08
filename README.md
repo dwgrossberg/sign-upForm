@@ -6,3 +6,4 @@ Built as part of The Odin Project.
 
 todo
 -light/dark toggle
+-credit photos
