@@ -123,7 +123,7 @@
 
 .form-wrapper {
     background-color: #000000;
-    background-image: linear-gradient(315deg, #000000 0%, #ffffff 74%);
+    background-image: linear-gradient(315deg, #696969 1%, #ffffff 74%);
     height: 70vh;
     width: 60vw;
     min-height: 515px;
@@ -141,7 +141,7 @@ form {
 .form-row {
     display: flex;
     justify-content: flex-start;
-    gap: 40px;
+    gap: 60px;
 }
 
 form h3 {
@@ -153,18 +153,26 @@ form h3 {
 form section {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 }
 
 form label {
     color: #000000;
     text-shadow: .5px .5px #F5F5F5;
+    padding-left: 1px;
 }
 
 .form-input {
-    width: 200px;
+    width: 175px;
     font-family: "Lato", sans-serif;
     font-size: 10px;
+    line-height: 14px;
+}
+
+.form-input:focus-within {
+    font-size: 11px;
+    font-weight: 900;
+    text-shadow: 1px 1px #F5F5F5;
 }
 
 /* input gradient border */
@@ -174,10 +182,21 @@ form label {
     align-items: center;
     height: 26px;
     width: 101%;
-    background-color: #000000;
     background-image: linear-gradient(170deg, #000000 0%, #ffffff 74%);
-    margin-top: 3px;
+    margin: 5px 5px 5px 0;
     border-radius: 3px;
+}
+
+.input-wrapper:hover { 
+    background-image: linear-gradient(to left, #743ad5, #d53a9d);
+    width: 102%;
+}
+
+.input-wrapper:focus-within { 
+    background-image: linear-gradient(to left, #743ad5, #d53a9d);
+    width: 103.5%;
+    height: 28px;
+    margin: 4px 5px 4px 0;
 }
 
 input[type="text"],
@@ -194,13 +213,20 @@ input[type="password"] {
     font-size: 12px;
     border: none;
     border-radius: 3px;
+}
 
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    width: 98%;
 }
 
 form button {
     font-family: "Ostrich Italic";
-    font-size: 18px;
-    padding: 7px 15px;
+    font-size: 16px;
+    padding: 8px 16px;
 }
 
 form p {
@@ -215,5 +241,5 @@ form p {
     font-style: italic;
     text-align: right;
     color: #F5F5F5;
-    padding-top: 30px;
+    padding-top: 15px;
 }
