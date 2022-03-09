@@ -106,6 +106,7 @@
     flex-direction: column;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
+    font-weight: 700;
 }
 
 .our-service::after{
@@ -227,6 +228,33 @@ form button {
     font-family: "Ostrich Italic";
     font-size: 16px;
     padding: 8px 16px;
+    background-color: white;
+    width: 125px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    width: 129px;
+    background-image: linear-gradient(to left, #743ad5, #d53a9d);
+    margin: 5px 5px 5px 0;
+    border-radius: 3px;
+}
+
+.button-wrapper:hover {
+    background-image: none;
+    background-color: white;
+}
+
+
+form button:hover {
+    background-image: linear-gradient(to left, #743ad5, #d53a9d);
+    color: white;
 }
 
 form p {
