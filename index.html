@@ -31,39 +31,51 @@
                         <div class="form-row">
                             <div class="form-input">
                                 <label for="first-name">FIRST NAME</label>
-                                <input type="text" name="first-name" id="first-name" required>
+                                <div class="input-wrapper">
+                                    <input type="text" name="first-name" id="first-name" required>
+                                </div>
                             </div>
                             <div class="form-input">
                                 <label for="last-name">LAST NAME</label>
-                                <input type="text" name="last-name" id="last-name" required>
+                                <div class="input-wrapper">
+                                    <input type="text" name="last-name" id="last-name" required>
+                                </div>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-input">
                                 <label for="email">EMAIL</label>
-                                <input type="email" name="email" id="email" required>
+                                <div class="input-wrapper">
+                                    <input type="email" name="email" id="email" required>
+                                </div>
                             </div>
                             <div class="form-input">
                                 <label for="tel">PHONE NUMBER</label>
-                                <input type="tel" name="tel" id="tel">
+                                <div class="input-wrapper">
+                                    <input type="tel" name="tel" id="tel">
+                                </div>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-input">
                                 <label for="pwd">PASSWORD</label>
-                                <input type="password" name="pwd" id="pwd" required minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})">
+                                <div class="input-wrapper">
+                                    <input type="password" name="pwd" id="pwd" required minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})">
+                                </div>
                             </div>
-                            <!-- password regex - must contain: 
-                                - at least 1 lowercase alphabetical character
-                                - at least 1 uppercase alphabetical character
-                                - at least 1 numeric character
-                                - at least one special character
-                                - must be eight characters or longer 
-                                *** special thanks to https://www.thepolyglotdeveloper.com/ -->
                             <div class="form-input">
                                 <label for="confirm-pwd">CONFIRM PASSWORD</label>
-                                <input type="password" name="confirm-pwd" id="confirm-pwd" required minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})">
+                                <div class="input-wrapper">
+                                    <input type="password" name="confirm-pwd" id="confirm-pwd" required minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})">
+                                </div>
                             </div>
+                             <!-- password regex - must contain: 
+                                 - at least 1 lowercase alphabetical character
+                                 - at least 1 uppercase alphabetical character
+                                 - at least 1 numeric character
+                                 - at least one special character
+                                 - must be eight characters or longer 
+                                 *** special thanks to https://www.thepolyglotdeveloper.com/ for help with the syntax -->
                         </div>
                     </section>
                     <section>
