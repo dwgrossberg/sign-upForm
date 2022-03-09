@@ -26,7 +26,7 @@
     display: flex;
     align-items: center;
     height: 100vh;
-    min-height: 665px;
+    min-height: 680px;
     width: 100vw;
     min-width: 500px;
     overflow: none;
@@ -127,7 +127,7 @@
     background-image: linear-gradient(315deg, #696969 1%, #ffffff 74%);
     height: 70vh;
     width: 60vw;
-    min-height: 515px;
+    min-height: 530px;
     min-width: 500px;
 }
 
@@ -197,7 +197,7 @@ form label {
     background-image: linear-gradient(to left, #743ad5, #d53a9d);
     width: 103.5%;
     height: 28px;
-    margin: 4px 5px 4px 0;
+    margin: 3.5px 4px 3.5px 0;
 }
 
 input[type="text"],
@@ -242,7 +242,6 @@ form button {
     height: 42px;
     width: 129px;
     background-image: linear-gradient(to left, #743ad5, #d53a9d);
-    margin: 5px 5px 5px 0;
     border-radius: 3px;
 }
 
@@ -258,7 +257,6 @@ form button:hover {
 }
 
 form p {
-    padding: 10px 0;
     font-size: 12px;
     font-family: "Lato", sans-serif;
 
@@ -269,5 +267,5 @@ form p {
     font-style: italic;
     text-align: right;
     color: #F5F5F5;
-    padding-top: 15px;
+    padding-top: 5px;
 }
