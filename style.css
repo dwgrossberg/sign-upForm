@@ -101,20 +101,20 @@
     align-items: flex-start;
     flex-direction: column;
     font-family: "Roboto", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .our-service::after{
     content: "";
-    background-image: url("../img/david-jorre-unsplash.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url("../img/space-pattern.png");
+    background-size: contain;
+    background-repeat: repeat;
     background-position: center center;
     position: absolute;
     width: 100%; 
     height: 100%;
     z-index: -1;
-    opacity: .3;
+    opacity: .1;
 }
 
 p, 
@@ -122,15 +122,20 @@ form {
     padding: 10px 60px;
 }
 
+.form-wrapper {
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #ffffff 74%);
+    height: calc(100vh - calc(100vh - 550px));
+    width: 60vw;
+    min-height: 400px;
+    min-width: 500px;
+}
+
 form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 30px;
-    height: 450px;
-    width: 60vw;
-    min-height: 400px;
-    min-width: 500px;
 }
 
 .form-row {
@@ -179,27 +184,8 @@ form p {
     font-size: 14px;
 }
 
-.content-bottom-right {
-    display: flex;
-    align-items: center;
-    position: relative;
-    height: 50px;
-}
-
-.content-bottom-right::after{
-    content: "";
-    background-image: url("../img/space-pattern.png");
-    background-size: contain;
-    background-repeat: repeat;
-    background-position: center center;
-    position: absolute;
-    width: 100%; 
-    height: 100%;
-    z-index: -1;
-    opacity: .2;
-}
-
-.content-bottom-right p {
+#disclaimer {
     font-size: 12px;
     font-style: italic;
+    color: white;
 }
