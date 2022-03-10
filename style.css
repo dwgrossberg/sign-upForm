@@ -289,6 +289,20 @@ form p {
     font-family: "Lato", sans-serif;
 }
 
+form p a {
+    color: #743ad5;
+    text-decoration: none;
+    text-shadow: .5px .5px #F5F5F5;
+}
+
+form p a:hover { 
+    text-decoration: underline;
+}
+
+form p a:active { 
+    color: #d53a9d
+}
+
 #disclaimer {
     font-size: 10px;
     font-style: italic;
