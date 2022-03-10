@@ -68,6 +68,25 @@
                         </div>
                         <div class="form-row">
                             <div class="form-input">
+                                <label for="tel">PHONE NUMBER</label>
+                                <div class="input-wrapper">
+                                    <input type="tel" name="tel" id="tel" placeholder="(555) 296-3492" title="Phone Number"
+                                    pattern="^(\([0-9]{3}\) |[0-9]{3}-)[0-9]{3}-[0-9]{4}$">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="age-wrapper">
+                                <div class="form-input" id="age-input">
+                                    <label for="age">AGE</label>
+                                    <div class="input-wrapper">
+                                        <input type="number" name="age" id="age" placeholder="33" title="Age" min="16" max="101" step="1">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-input">
                                 <label for="pwd">PASSWORD</label>
                                 <div class="input-wrapper">
                                     <input type="password" name="pwd" id="pwd" placeholder="••••••••" title="Password" required minlength="10" 
@@ -78,6 +97,12 @@
                                 <meter max="4" id="pwd-strength-meter"></meter>
                                 <p id="pwd-strength-text"></p>
                             </div>
+                            <!-- password regex - must contain: 
+                                - at least 1 numeric character
+                                - at least 1 special character
+                                - at least 1 lowercase alphabetical character
+                                - at least 1 uppercase alphabetical character
+                                - must be 10 characters or longer -->
                             <div class="form-input">
                                 <label for="confirm-pwd">CONFIRM PASSWORD</label>
                                 <div class="input-wrapper">
@@ -96,12 +121,6 @@
                                     </script>
                                 </div>
                             </div>
-                             <!-- password regex - must contain: 
-                                - at least 1 numeric character
-                                - at least 1 special character
-                                - at least 1 lowercase alphabetical character
-                                - at least 1 uppercase alphabetical character
-                                - must be 10 characters or longer -->
                         </div>
                     </section>
                     <section>
