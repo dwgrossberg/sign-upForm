@@ -267,6 +267,26 @@ input:valid + span::after {
     left: -15px;
 }
 
+meter {
+    width: 100%;
+    height: 10px;
+}
+
+meter::-webkit-meter-bar {
+    background: none;
+    background-color: none;
+    border: none;
+  }
+
+meter[value="1"]::-webkit-meter-optimum-value { background: #d53a9d; }
+meter[value="2"]::-webkit-meter-optimum-value { background: #b53ab0; }
+meter[value="3"]::-webkit-meter-optimum-value { background: #943ac2; }
+meter[value="4"]::-webkit-meter-optimum-value { background: #743ad5; }
+
+#pwd-strength-text {
+    font-size: 10px;
+}
+
 form button {
     font-family: "Ostrich Italic";
     font-size: 16px;

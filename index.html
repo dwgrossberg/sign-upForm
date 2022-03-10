@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js" defer></script>
+    <script src="script.js" defer></script>
     <title>Sign-Up Form</title>
 </head>
 <body>
@@ -73,6 +75,8 @@
                                     oninvalid="this.setCustomValidity('Enter Password Here')">
                                     <span></span>
                                 </div>
+                                <meter max="4" id="pwd-strength-meter"></meter>
+                                <p id="pwd-strength-text"></p>
                             </div>
                             <div class="form-input">
                                 <label for="confirm-pwd">CONFIRM PASSWORD</label>
