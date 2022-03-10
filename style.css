@@ -26,7 +26,7 @@
     display: flex;
     align-items: center;
     height: 100vh;
-    min-height: 680px;
+    min-height: 700px;
     width: 100vw;
     min-width: 500px;
     overflow: none;
@@ -127,7 +127,7 @@
     background-image: linear-gradient(315deg, #696969 1%, #ffffff 74%);
     height: 70vh;
     width: 60vw;
-    min-height: 530px;
+    min-height: 550px;
     min-width: 515px;
 }
 
@@ -284,6 +284,7 @@ meter[value="3"]::-webkit-meter-optimum-value { background: #943ac2; }
 meter[value="4"]::-webkit-meter-optimum-value { background: #743ad5; }
 
 #pwd-strength-text {
+    height: 20px;
     font-size: 10px;
 }
 

@@ -71,7 +71,7 @@
                                 <label for="pwd">PASSWORD</label>
                                 <div class="input-wrapper">
                                     <input type="password" name="pwd" id="pwd" placeholder="••••••••" title="Password" required minlength="8" 
-                                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+                                    pattern="^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}$"
                                     oninvalid="this.setCustomValidity('Enter Password Here')">
                                     <span></span>
                                 </div>
@@ -82,7 +82,7 @@
                                 <label for="confirm-pwd">CONFIRM PASSWORD</label>
                                 <div class="input-wrapper">
                                     <input type="password" name="confirm-pwd" id="confirm-pwd" placeholder="••••••••" title="Confirm Password" required minlength="8" 
-                                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+                                    pattern="^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}$"
                                     oninput="check(this)">
                                     <span></span>
                                     <script language="javascript" type="text/javascript">
@@ -97,11 +97,12 @@
                                 </div>
                             </div>
                              <!-- password regex - must contain: 
-                                 - at least 1 lowercase alphabetical character
-                                 - at least 1 uppercase alphabetical character
-                                 - at least 1 numeric character
-                                 - must be eight characters or longer 
-                                 *** special thanks to https://www.thepolyglotdeveloper.com/ for help with the syntax -->
+                                - at least 1 numeric character
+                                - at least 1 special character
+                                - at least 1 lowercase alphabetical character
+                                - at least 1 uppercase alphabetical character
+                                - must be eight characters or longer 
+                                *** special thanks to https://www.thepolyglotdeveloper.com/ for help with the syntax -->
                         </div>
                     </section>
                     <section>

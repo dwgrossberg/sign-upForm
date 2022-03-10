@@ -1,7 +1,7 @@
 // spcial thanks to css-tricks and Pankaj Parashar for the ideas
 
 let strength = {
-    0: "Bad ☹",
+    0: "Unsafe ☹",
     1: "Bad ☹",
     2: "Weak ☹",
     3: "Good ☺",
