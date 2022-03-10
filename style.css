@@ -282,6 +282,25 @@ input:valid + span::after {
     left: -15px;
 }
 
+input:out-of-range + span::before {
+    position: absolute;
+    content: "Ages 13-103 only";
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    background-color: white;
+    color: #d53a9d;
+    border: 1px solid #d53a9d;
+    top: -10px;
+    left: 5px;
+    width: 95px;
+    padding: 3px 7px;
+    font-size: 10px;
+    opacity: .8;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
 meter {
     width: 100%;
     height: 10px;
