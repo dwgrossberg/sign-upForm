@@ -128,7 +128,7 @@
     height: 70vh;
     width: 60vw;
     min-height: 530px;
-    min-width: 500px;
+    min-width: 515px;
 }
 
 form {
@@ -165,7 +165,7 @@ form label {
 }
 
 .form-input {
-    width: 175px;
+    width: 200px;
     font-family: "Lato", sans-serif;
     font-size: 10px;
     line-height: 14px;
@@ -235,6 +235,16 @@ input:required + span::before {
     top: -38px;
     left: -54px;
     opacity: .7;
+}
+
+input:focus-within + span::before {
+    background-color: white;
+    color: #d53a9d;
+    border: solid 1px #d53a9d;
+}
+
+input:valid + span::before {
+    display: none;
 }
 
 input:invalid + span::after {
