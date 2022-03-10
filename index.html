@@ -68,10 +68,22 @@
                         </div>
                         <div class="form-row">
                             <div class="form-input">
-                                <label for="tel">PHONE NUMBER</label>
+                                <label for="myGalaxy">PREFERRED GALAXY</label>
                                 <div class="input-wrapper">
-                                    <input type="tel" name="tel" id="tel" placeholder="(555) 296-3492" title="Phone Number"
-                                    pattern="^(\([0-9]{3}\) |[0-9]{3}-)[0-9]{3}-[0-9]{4}$">
+                                    <input list="galaxies" name="myGalaxy" id="myGalaxy" placeholder="Hydrus I" title="Preferred Galaxy">
+                                    <datalist id="galaxies">
+                                        <option value="Milky Way"></option>
+                                        <option value="Canis Major Dwarf"></option>
+                                        <option value="Draco II"></option>
+                                        <option value="Tucana III"></option>
+                                        <option value="Segue 1"></option>
+                                        <option value="Sagittarius Dwarf Spheroidal Galaxy"></option>
+                                        <option value="Hydrus I"></option>
+                                        <option value="Carina III"></option>
+                                        <option value="Ursa Major II Dwarf"></option>
+                                        <option value="Triangulum II"></option>
+                                        <option value="Reticulum II"></option>
+                                    </datalist>
                                     <span></span>
                                 </div>
                             </div>
