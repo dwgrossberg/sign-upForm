@@ -32,14 +32,16 @@
                             <div class="form-input">
                                 <label for="first-name">FIRST NAME</label>
                                 <div class="input-wrapper">
-                                    <input type="text" name="first-name" id="first-name" placeholder="JimBob" required>
+                                    <input type="text" name="first-name" id="first-name" placeholder="JimBob" title="First Name" required
+                                    oninvalid="this.setCustomValidity('Enter First Name Here')">
                                     <span></span>
                                 </div>
                             </div>
                             <div class="form-input">
                                 <label for="last-name">LAST NAME</label>
                                 <div class="input-wrapper">
-                                    <input type="text" name="last-name" id="last-name" placeholder="Jorgensen" required>
+                                    <input type="text" name="last-name" id="last-name" placeholder="Jorgensen" title="Last Name" required
+                                    oninvalid="this.setCustomValidity('Enter Last Name Here')">
                                     <span></span>
                                 </div>
                             </div>
@@ -48,14 +50,15 @@
                             <div class="form-input">
                                 <label for="email">EMAIL</label>
                                 <div class="input-wrapper">
-                                    <input type="email" name="email" id="email" placeholder="jb.jorgensen@gmail.com" required>
+                                    <input type="email" name="email" id="email" placeholder="jb.jorgensen@gmail.com" title="Email" required
+                                    oninvalid="this.setCustomValidity('Enter Email Here')">
                                     <span></span>
                                 </div>
                             </div>
                             <div class="form-input">
                                 <label for="tel">PHONE NUMBER</label>
                                 <div class="input-wrapper">
-                                    <input type="tel" name="tel" id="tel" placeholder="555-296-3492">
+                                    <input type="tel" name="tel" id="tel" placeholder="555-296-3492" title="Phone Number">
                                     <span></span>
                                 </div>
                             </div>
@@ -64,22 +67,32 @@
                             <div class="form-input">
                                 <label for="pwd">PASSWORD</label>
                                 <div class="input-wrapper">
-                                    <input type="password" name="pwd" id="pwd" placeholder="••••••••" required minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})">
+                                    <input type="password" name="pwd" id="pwd" placeholder="••••••••" title="Password" required minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+                                    oninvalid="this.setCustomValidity('Enter Password Here')">
                                     <span></span>
                                 </div>
                             </div>
                             <div class="form-input">
                                 <label for="confirm-pwd">CONFIRM PASSWORD</label>
                                 <div class="input-wrapper">
-                                    <input type="password" name="confirm-pwd" id="confirm-pwd" placeholder="••••••••" required minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})">
+                                    <input type="password" name="confirm-pwd" id="confirm-pwd" placeholder="••••••••" title="Confirm Password" required minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+                                    oninput="check(this)">
                                     <span></span>
+                                    <script language="javascript" type="text/javascript">
+                                        function check(input) {
+                                            if (input.value != document.getElementById("pwd").value) {
+                                                input.setCustomValidity("Passwords Must Match");
+                                            } else {
+                                                input.setCustomValidity("");
+                                            }
+                                        }
+                                    </script>
                                 </div>
                             </div>
                              <!-- password regex - must contain: 
                                  - at least 1 lowercase alphabetical character
                                  - at least 1 uppercase alphabetical character
                                  - at least 1 numeric character
-                                 - at least one special character
                                  - must be eight characters or longer 
                                  *** special thanks to https://www.thepolyglotdeveloper.com/ for help with the syntax -->
                         </div>
