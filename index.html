@@ -58,7 +58,8 @@
                             <div class="form-input">
                                 <label for="tel">PHONE NUMBER</label>
                                 <div class="input-wrapper">
-                                    <input type="tel" name="tel" id="tel" placeholder="555-296-3492" title="Phone Number">
+                                    <input type="tel" name="tel" id="tel" placeholder="(555) 296-3492" title="Phone Number"
+                                    pattern="^(\([0-9]{3}\) |[0-9]{3}-)[0-9]{3}-[0-9]{4}$">
                                     <span></span>
                                 </div>
                             </div>
@@ -67,7 +68,8 @@
                             <div class="form-input">
                                 <label for="pwd">PASSWORD</label>
                                 <div class="input-wrapper">
-                                    <input type="password" name="pwd" id="pwd" placeholder="••••••••" title="Password" required minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+                                    <input type="password" name="pwd" id="pwd" placeholder="••••••••" title="Password" required minlength="8" 
+                                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
                                     oninvalid="this.setCustomValidity('Enter Password Here')">
                                     <span></span>
                                 </div>
@@ -75,7 +77,8 @@
                             <div class="form-input">
                                 <label for="confirm-pwd">CONFIRM PASSWORD</label>
                                 <div class="input-wrapper">
-                                    <input type="password" name="confirm-pwd" id="confirm-pwd" placeholder="••••••••" title="Confirm Password" required minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+                                    <input type="password" name="confirm-pwd" id="confirm-pwd" placeholder="••••••••" title="Confirm Password" required minlength="8" 
+                                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
                                     oninput="check(this)">
                                     <span></span>
                                     <script language="javascript" type="text/javascript">
