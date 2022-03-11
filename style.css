@@ -34,6 +34,7 @@
 
 .img-banner {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: url("../img/casey-horner-unsplash.jpg");
@@ -55,6 +56,8 @@
     width: 100%;
     height: 130px;
     padding: 0, 20px;
+    margin-bottom: auto;
+    margin-top: auto;
 }
 
 .logo {
@@ -70,6 +73,21 @@
     font-family: "Ostrich Bold", sans-serif;
     font-size: 4rem;
     margin-top: 20px;
+    color: white;
+}
+
+.photo-credit {
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+.photo-credit>p {
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-size: 9px;
+}
+
+.photo-credit>p>a {
     color: white;
 }
 
