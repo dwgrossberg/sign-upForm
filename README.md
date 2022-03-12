@@ -1,9 +1,7 @@
 # sign-upForm
 
-A sample sign-up form built using vanilla css and js.
+A sample sign-up form built using HTML5, CSS, and a dash of JS.
 
 Built as part of The Odin Project.
 
-todo
--light/dark toggle
--credit photos
+
